@@ -1,0 +1,31 @@
+.Container{
+     border:solid black;
+     margin: 200px  500px;
+     text-align: center;
+     font-family: 'Courier New', Courier, monospace;
+     border-radius: 30px;
+     background-color: aqua;
+}
+.Header{
+  color: azure;
+  font-size: 80px;
+}
+.Container button{
+  background-color: bisque;
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+    color: rgb(222, 12, 12);
+}
+@media (max-width: 768px) {
+  .Container{ border:solid black;
+     margin: 20px 5px;
+   
+}
+.Container button{
+  margin-left: 5px;
+}
+}
