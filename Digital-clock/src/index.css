@@ -21,7 +21,7 @@ body{
 }
 .dark{
    margin-bottom: 100px;
-   margin-left: 140px;
+   margin-left: 220px;
    background-color: black;
    color: white;
    font-size: 60px;
@@ -32,7 +32,7 @@ body{
 }
 .bright{
  margin-bottom: 100px;
-   margin-left: 140px;
+   margin-left: 220px;
    background-color: white;
    color: black;
    font-size: 60px;

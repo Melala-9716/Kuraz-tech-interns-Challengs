@@ -1,4 +1,4 @@
-import react,{useEffect,useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import background from "./assets/backgroundimage.png";
 function DIgitalClock(){
     const[time,SetTime]=useState(new Date());
@@ -29,9 +29,17 @@ function DIgitalClock(){
     function Change(){
         SetColor(!color);
     }
-let hour=String(time.getHours()).padStart(2,"0");
-let minute=String(time.getMinutes()).padStart(2,"0");
-let second=String(time.getSeconds()).padStart(2,"0");
+    function formatTime(){
+        let hour=time.getHours();
+        let minute=time.getMinutes();
+         let second=time.getSeconds();
+         const meridiem=hour>=12?"PM":"AM"
+        hour=hour% 12 || 12;
+         hour = String(hour).padStart(2,"0");
+    minute = String(minute).padStart(2,"0");
+    second = String(second).padStart(2,"0");
+        return `${hour}: ${minute}: ${second} ${meridiem}`
+    }
 
 
     return(
@@ -40,7 +48,7 @@ let second=String(time.getSeconds()).padStart(2,"0");
     <button className={color ? "dark" : "bright"} onClick={Change}>{color ? "dark" : "bright"}</button>
       <div className='container'>
         <div className='clock'>
-            <span>{hour}:{minute}:{second}</span>
+            <span>{formatTime()}</span>
         </div>
       </div>
       </div>
