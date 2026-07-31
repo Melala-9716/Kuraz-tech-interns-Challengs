@@ -1,0 +1,49 @@
+body{
+  background: url(assets\backgroundimage.png) no-repeat center/cover fixed;
+    height: 100vh;
+  margin: 0;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 100vh;
+}
+.container{
+    backdrop-filter: blur(5px);
+    padding: 20px 0px;
+}
+.clock{
+  color:white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0,0%,0%,0.75);
+}
+.dark{
+   margin-bottom: 100px;
+   margin-left: 140px;
+   background-color: black;
+   color: white;
+   font-size: 60px;
+   border: 1px solid white;
+   border-radius: 10px;
+   width: 200px;
+   height:100px;
+}
+.bright{
+ margin-bottom: 100px;
+   margin-left: 140px;
+   background-color: white;
+   color: black;
+   font-size: 60px;
+   border: 1px solid black;
+   border-radius: 10px;
+   width: 200px;
+   height:100px;
+}
+.theme-dark  {
+  color: black;
+}
+.theme-dark .clock{
+  color: hsl(0, 0%, 40%);
+}
