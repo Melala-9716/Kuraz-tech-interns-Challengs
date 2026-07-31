@@ -6,93 +6,67 @@ The projects focus on understanding React fundamentals, building reusable compon
 
 ## Projects Included
 
-### React Counter App
+### To-Do List App
 
-A simple counter application built with React.
+A task management application that allows users to add, delete, and manage tasks.
 
-**Concepts Practiced:**
+**Main concepts practiced:**
 
-* React components
-* `useState` Hook
-* Event handling with `onClick`
-* Updating UI dynamically
-* Creating reusable components
+* Managing lists with React state
+* Handling user input
+* Event handling
+* Local storage
+
+---
+
+### Counter App
+
+A simple counter application that allows users to increase, decrease, and reset values.
+
+**Main concepts practiced:**
+
+* `useState`
+* React state updates
+* Button event handling
 
 ---
 
-### Profile Component Practice
-
-A project focused on practicing component creation and passing data between components.
-
-**Concepts Practiced:**
-
-* Reusable components
-* Props
-* Component structure
-* Organizing React files
-
----
 
 ### Color Picker App
 
-A color picker application where users can select a color and see the UI update dynamically.
+An application that allows users to select colors and dynamically update the interface.
 
-**Concepts Practiced:**
+**Main concepts practiced:**
 
-* `useState` Hook
-* Controlled inputs
-* `onChange` events
+* State management
+* Handling input changes
 * Dynamic styling
-* Managing user input
+
+---
+
+### Digital Clock App
+
+A real-time digital clock that displays the current time and includes a dark/bright mode toggle.
+
+**Main concepts practiced:**
+
+* `useState`
+* `useEffect`
+* `setInterval`
+* Side effects and cleanup functions
+* Conditional styling
 
 ---
 
 ## Technologies Used
 
 * React
-* JavaScript (ES6)
-* HTML
+* JavaScript
 * CSS
 * Vite
 * Git & GitHub
 
-## React Concepts Practiced
+## Overall Learning
 
-Throughout these challenges, I practiced:
+Through these projects, I practiced building React applications, managing state, handling user interactions, creating reusable components, and improving my frontend development skills.
 
-* React components
-* JSX syntax
-* Props
-* State management with `useState`
-* Event handling (`onClick`, `onChange`)
-* Conditional rendering
-* Dynamic styling
-* Component organization
-
-## Running the Projects
-
-For any project:
-
-Navigate into the project folder:
-
-```bash
-cd project-name
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-## Learning Goals
-
-The purpose of this repository is to track my progress while learning React and building confidence in creating interactive front-end applications.
-
-Each project helped me understand how React manages state, handles user actions, and updates the interface efficiently.
