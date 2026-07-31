@@ -1,16 +1,68 @@
-# React + Vite
+# Counter and Toggle App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application built with Vite that includes a counter system and a dark/bright mode toggle.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Increase the counter value
+* Decrease the counter value
+* Reset the counter back to zero
+* Toggle between dark mode and bright mode
+* Dynamic UI changes based on user interaction
+* Simple and responsive interface
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* JavaScript
+* CSS
+* Vite
 
-## Expanding the ESLint configuration
+## What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Using `useState` to manage component state
+* Handling button click events in React
+* Creating reusable components
+* Using conditional rendering for changing themes
+* Managing UI updates with React state
+
+## Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── Counter.jsx
+│   └── Toggle.jsx
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## How to Run the Project
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+## Future Improvements
+
+* Add animations for theme switching
+* Save the selected theme using localStorage
+* Improve UI design with more styling options
