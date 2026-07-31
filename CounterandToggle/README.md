@@ -1,16 +1,57 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Counter and Toggle App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A simple React application built with Vite that includes a counter system and a dark/bright mode toggle.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Increase the counter value
+* Decrease the counter value
+* Reset the counter back to zero
+* Toggle between dark mode and bright mode
+* Simple and interactive user interface
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* JavaScript
+* CSS
+* Vite
+
+## What I Learned
+
+* Using `useState` to manage component state
+* Handling button events in React
+* Updating the UI dynamically
+* Using conditional rendering
+* Creating and using React components
+
+## Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── Counter.jsx
+│   └── Toggle.jsx
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## How to Run the Project
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
