@@ -1,16 +1,76 @@
-# React + Vite
+# Stop-Watch App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive stopwatch application built with React. This project demonstrates the use of React hooks, state management, side effects, and references to create a functional timer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Start the stopwatch
+* Stop the stopwatch
+* Reset the timer
+* Real-time time updates
+* Displays hours, minutes, seconds, and milliseconds
+* Responsive design for different screen sizes
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* JavaScript
+* CSS
+* Vite
 
-## Expanding the ESLint configuration
+## React Concepts Practiced
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* `useState`
+  Used to store and update the stopwatch state, such as the elapsed time and running status.
+
+* `useEffect`
+  Used to control the `setInterval` function and update the timer continuously while the stopwatch is running.
+
+* `useRef`
+  Used to store values that need to persist between renders without causing unnecessary UI updates, such as the interval ID and starting time.
+
+## How It Works
+
+The stopwatch calculates elapsed time by comparing the current time with the time when the stopwatch started:
+
+```
+Elapsed Time = Current Time - Start Time
+```
+
+The timer updates every few milliseconds and the result is formatted into:
+
+```
+Hours : Minutes : Seconds : Milliseconds
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone your-repository-link
+```
+
+Navigate to the project folder:
+
+```bash
+cd Stop-Watch
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+
+
+## Author
+
+Melala Muleta
