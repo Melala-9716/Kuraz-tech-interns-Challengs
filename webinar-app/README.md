@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Guest Senior Webinar
 
-## Getting Started
+A simple Next.js application built to practice the App Router, shared layouts, Server Components, and Client Components. The project presents information about a guest senior webinar, including the event details, speakers, and schedule.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* Shared layout using `layout.jsx`
+* Home page with webinar information
+* Speakers page
+* Schedule page
+* Interactive **Join Webinar** button using a Client Component
+* Clean project structure with reusable components
+
+## Technologies Used
+
+* Next.js
+* React
+* JavaScript (JSX)
+* CSS
+
+## Project Structure
+
+```text
+app
+├── layout.jsx
+├── page.jsx
+├── globals.css
+├── speakers
+│   └── page.jsx
+├── schedule
+│   └── page.jsx
+└── components
+    └── JoinButton.jsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What I Learned
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Creating a shared layout with the Next.js App Router
+* Understanding the difference between Server and Client Components
+* Organizing a project using reusable components
+* Building multiple routes using the `app` directory
+* Managing simple client-side interactivity with `useState`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Author
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Melala Muleta**
