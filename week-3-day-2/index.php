@@ -53,6 +53,41 @@
         $product2->Description();
         echo "Total: " .$product2->calculateTotal();
        
+
+
+        
+class BankAccount {
+    public $owner;
+    private $balance;
+
+    public function __construct($owner, $balance) {
+        $this->owner = $owner;
+        $this->balance = $balance;
+    }
+
+    public function deposit($amount) {
+        if ($amount <= 0) {
+            return "The deposit amount must be positive.";
+        }
+
+        $this->balance += $amount;
+        return "Deposit successful.";
+    }
+
+    public function displayBalance() {
+        echo "Account Owner: " . $this->owner . "<br>";
+        echo "Current Balance: " . $this->balance . "<br>";
+    }
+}
+
+$bankAccount1 = new BankAccount("Melala", 500);
+
+echo $bankAccount1->deposit(200) . "<br>";
+$bankAccount1->displayBalance();
+
+echo "<br>" . $bankAccount1->deposit(-50) . "<br>";
+$bankAccount1->displayBalance();
+
     ?>
 </body>
 </html>
